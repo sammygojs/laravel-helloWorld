@@ -1,6 +1,7 @@
 <?php
 
 use app\Http\Controllers\helloWorldController;
+use app\Http\Controllers\projectController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,8 +13,11 @@ use app\Http\Controllers\helloWorldController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
 
-Route::get('/hello_world','helloWorldController@hello_world');
+// Route::get('/hello_world','helloWorldController@hello_world');
+
+// Route::get('/', [projectController::class, 'getData']);
+Route::get('/','projectController@getData');
