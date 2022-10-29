@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class projectController extends Controller
 {
     public function getData(Request $request){
-        return view('index');
+        $data = "my data variable";
+        return view('index',['key'=>$data]);
     }
 }
