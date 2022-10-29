@@ -13,7 +13,7 @@ use app\Http\Controllers\helloWorldController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/hello_world','helloWorldController@hello_world');
